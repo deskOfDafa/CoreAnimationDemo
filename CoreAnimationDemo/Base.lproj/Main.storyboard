@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dnx-cu-xnh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-xr-ng1">
+                                <rect key="frame" x="127" y="252" width="146" height="30"/>
+                                <state key="normal" title="CABaseAnimation"/>
+                                <connections>
+                                    <segue destination="WgE-Gx-lbe" kind="show" id="8Rg-aG-THr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7p-Is-Y2J">
+                                <rect key="frame" x="127" y="306" width="146" height="30"/>
+                                <state key="normal" title="CAGroupAnimation"/>
+                                <connections>
+                                    <segue destination="g7k-0W-LjH" kind="show" id="XIZ-65-ieP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6i-8Z-oh1">
+                                <rect key="frame" x="127" y="361" width="146" height="30"/>
+                                <state key="normal" title="KeyPathAnimation"/>
+                                <connections>
+                                    <segue destination="kza-jr-eV4" kind="show" id="OpK-nq-viS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLR-mh-g0F">
+                                <rect key="frame" x="84" y="423" width="210" height="30"/>
+                                <state key="normal" title="CATranstionAnimation"/>
+                                <connections>
+                                    <segue destination="X1E-Ew-vIk" kind="show" id="YeL-Ub-Ep9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="euP-4a-G0U"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="478"/>
+        </scene>
+        <!--Ykey Path AnimationVC-->
+        <scene sceneID="Yrh-Uw-drY">
+            <objects>
+                <viewController id="kza-jr-eV4" customClass="QYkeyPathAnimationVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R6B-qZ-ndt"/>
+                        <viewControllerLayoutGuide type="bottom" id="gRM-6o-cta"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ABP-S3-RKe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D8-Gy-o01">
+                                <rect key="frame" x="47" y="43" width="46" height="30"/>
+                                <state key="normal" title="jump"/>
+                                <connections>
+                                    <action selector="jumpAction:" destination="kza-jr-eV4" eventType="touchUpInside" id="GYX-Ye-85X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qX-XQ-3HW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="389"/>
+        </scene>
+        <!--Group AnimationVC-->
+        <scene sceneID="mcV-YJ-3hY">
+            <objects>
+                <viewController id="g7k-0W-LjH" customClass="QYGroupAnimationVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PAo-zC-KiV"/>
+                        <viewControllerLayoutGuide type="bottom" id="3sI-me-Jh6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ppn-CL-prw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfO-Ql-qid" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ktQ-WV-uaA">
+            <objects>
+                <navigationController id="Dnx-cu-xnh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Iz-7h-VGk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kqR-e7-G7P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XxG-iD-7JJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-968" y="410"/>
+        </scene>
+        <!--Animation Vc-->
+        <scene sceneID="7dH-2u-ite">
+            <objects>
+                <viewController id="WgE-Gx-lbe" customClass="QYCAAnimationVc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9VY-hf-5FV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZvP-Vm-qhx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aZg-OT-7CA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzI-yn-KC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="195"/>
+        </scene>
+        <!--CatranstionVC-->
+        <scene sceneID="Neu-wB-kCF">
+            <objects>
+                <viewController id="X1E-Ew-vIk" customClass="QYCatranstionVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SIX-yG-qGl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rt5-u9-AI6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m4F-GC-CUU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tsG-5l-w4J">
+                                <rect key="frame" x="105" y="173" width="248" height="29"/>
+                                <segments>
+                                    <segment title="Right"/>
+                                    <segment title="Left"/>
+                                    <segment title="top"/>
+                                    <segment title="bottom"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEp-X1-ZnE">
+                                <rect key="frame" x="168" y="236" width="30" height="30"/>
+                                <state key="normal" title="转场"/>
+                                <connections>
+                                    <action selector="TrastionAction:" destination="X1E-Ew-vIk" eventType="touchUpInside" id="eQn-Zv-x6F"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-Hx-99B">
+                                <rect key="frame" x="37" y="132" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="subtype" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-3C-Jd7">
+                                <rect key="frame" x="34" y="179" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tdb-bB-cvg">
+                                <rect key="frame" x="105" y="125" width="248" height="29"/>
+                                <segments>
+                                    <segment title="Fade"/>
+                                    <segment title="MoveIn"/>
+                                    <segment title="push"/>
+                                    <segment title="Reveal"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="subTypeSegmented" destination="tsG-5l-w4J" id="GJv-CD-cvM"/>
+                        <outlet property="typeSegmented" destination="tdb-bB-cvg" id="Yog-ZT-V1F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tg-NB-Wjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="217"/>
+        </scene>
+    </scenes>
+</document>
